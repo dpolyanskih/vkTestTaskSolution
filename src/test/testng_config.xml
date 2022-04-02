@@ -10,6 +10,9 @@
                 <include name="likes.add"/>
             </run>
         </groups>
+        <classes>
+            <class name="ru.polyanskih.tests.likes.TestLikesAdd"/>
+        </classes>
     </test>
     <test name="likes.delete">
         <groups>
@@ -17,6 +20,9 @@
                 <include name="likes.delete"/>
             </run>
         </groups>
+        <classes>
+            <class name="ru.polyanskih.tests.likes.TestLikesDelete"/>
+        </classes>
     </test>
     <test name="likes.getList">
         <groups>
@@ -24,6 +30,9 @@
                 <include name="likes.getList"/>
             </run>
         </groups>
+        <classes>
+            <class name="ru.polyanskih.tests.likes.TestLikesGetList"/>
+        </classes>
     </test>
     <test name="likes.isLiked">
         <groups>
@@ -31,5 +40,8 @@
                 <include name="likes.isLiked"/>
             </run>
         </groups>
+        <classes>
+            <class name="ru.polyanskih.tests.likes.TestLikesIsLiked"/>
+        </classes>
     </test>
 </suite>

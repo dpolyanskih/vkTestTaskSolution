@@ -1,4 +1,4 @@
-package ru.polyanskih.tests.common.helpers;
+package ru.polyanskih.tests.common.asserts;
 
 import com.vk.api.sdk.exceptions.ApiException;
 
@@ -6,7 +6,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Reporter.log;
 
-public class AssertWithLog {
+public class AssertsWithLog {
 
     public static void assertEqualsWithLog(Object actual, Object expected, String paramName, String message) {
         assertEquals(actual, expected, message);

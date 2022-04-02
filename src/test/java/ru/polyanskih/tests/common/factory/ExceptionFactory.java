@@ -1,9 +1,9 @@
-package ru.polyanskih.tests.common.helpers;
+package ru.polyanskih.tests.common.factory;
 
 import com.vk.api.sdk.exceptions.ApiParamException;
 import com.vk.api.sdk.exceptions.ApiPrivateProfileException;
 
-public class Exception {
+public class ExceptionFactory {
 
     public static ApiPrivateProfileException privateProfileException() {
         return new ApiPrivateProfileException("This profile is private");

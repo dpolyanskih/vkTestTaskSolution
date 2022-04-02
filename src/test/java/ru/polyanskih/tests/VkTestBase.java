@@ -1,4 +1,4 @@
-package ru.polyanskih.tests.common;
+package ru.polyanskih.tests;
 
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.UserActor;
@@ -11,6 +11,7 @@ import org.testng.SkipException;
 import org.testng.TestNGException;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
+import ru.polyanskih.tests.common.Listener;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -34,7 +35,7 @@ public class VkTestBase {
     private static String CLIENT_SECRET;
     private static final String AUTH_URI = "https://oauth.vk.com/token";
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public static void init() {
         loadProperties();
         ACTOR = getUserActor();

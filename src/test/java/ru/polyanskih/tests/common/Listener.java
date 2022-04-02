@@ -1,10 +1,11 @@
-package ru.polyanskih.tests.common.listeners;
+package ru.polyanskih.tests.common;
 
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
 public class Listener extends TestListenerAdapter {
+
     @Override
     public void onTestFailure(ITestResult testResult) {
         Reporter.log(testResult.getThrowable().toString());

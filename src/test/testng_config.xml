@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="vkTestTask" parallel="methods" thread-count="1" verbose="2" preserve-order="false">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="likes.add">
+        <groups>
+            <run>
+                <include name="likes.add"/>
+            </run>
+        </groups>
+    </test>
+    <test name="likes.delete">
+        <groups>
+            <run>
+                <include name="likes.delete"/>
+            </run>
+        </groups>
+    </test>
+    <test name="likes.getList">
+        <groups>
+            <run>
+                <include name="likes.getList"/>
+            </run>
+        </groups>
+    </test>
+    <test name="likes.isLiked">
+        <groups>
+            <run>
+                <include name="likes.isLiked"/>
+            </run>
+        </groups>
+    </test>
+</suite>

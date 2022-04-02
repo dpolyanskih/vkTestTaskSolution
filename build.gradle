@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.polyanskih.tests.vk.test.task'
+version '1.3.3.7'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation'com.vk.api:sdk:1.0.14'
+    testImplementation 'io.rest-assured:rest-assured:5.0.0'
+    testImplementation 'org.testng:testng:7.5'
+    testImplementation('org.uncommons:reportng:1.1.4') {
+        exclude group: "org.testng", module: "testng"
+    }
+    testImplementation "com.google.inject:guice:3.0"
+}
+
+test {
+    testLogging.showStandardStreams = true
+    useTestNG() {
+
+        options ->
+            options.useDefaultListeners = true// enable TestNG support (default is JUnit)
+//            options.parallel = 'methods'
+//            options.threadCount = 1
+            options.suites(new File(projectDir.toString() + "/src/test/tests.xml"))
+    }
+}

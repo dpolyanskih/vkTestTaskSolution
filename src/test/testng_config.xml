@@ -4,44 +4,44 @@
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     </listeners>
-    <test name="likes.add">
+    <test name="likes.add" verbose="2">
         <groups>
             <run>
                 <include name="likes.add"/>
             </run>
         </groups>
-        <classes>
-            <class name="ru.polyanskih.tests.likes.TestLikesAdd"/>
-        </classes>
+        <packages>
+            <package name="ru.polyanskih.tests.likes.*"/>
+        </packages>
     </test>
-    <test name="likes.delete">
+    <test name="likes.delete" verbose="2">
         <groups>
             <run>
                 <include name="likes.delete"/>
             </run>
         </groups>
-        <classes>
-            <class name="ru.polyanskih.tests.likes.TestLikesDelete"/>
-        </classes>
+        <packages>
+            <package name="ru.polyanskih.tests.likes.*"/>
+        </packages>
     </test>
-    <test name="likes.getList">
+    <test name="likes.getList" verbose="2">
         <groups>
             <run>
                 <include name="likes.getList"/>
             </run>
         </groups>
-        <classes>
-            <class name="ru.polyanskih.tests.likes.TestLikesGetList"/>
-        </classes>
+        <packages>
+            <package name="ru.polyanskih.tests.likes.*"/>
+        </packages>
     </test>
-    <test name="likes.isLiked">
+    <test name="likes.isLiked" verbose="2">
         <groups>
             <run>
                 <include name="likes.isLiked"/>
             </run>
         </groups>
-        <classes>
-            <class name="ru.polyanskih.tests.likes.TestLikesIsLiked"/>
-        </classes>
+        <packages>
+            <package name="ru.polyanskih.tests.likes.*"/>
+        </packages>
     </test>
 </suite>

@@ -47,7 +47,7 @@ public class VkTestBase {
         try {
             getResponse = getUserWallLastPost(ownerId);
         } catch (ApiException e) {
-            throw new TestNGException("");
+            throw new TestNGException("Unable to get last wall post id of user " + ownerId);
         }
         assertNotNullWithLog(getResponse.getItems().get(0).getId(), "item.id", "Expect item.id");
         return getResponse.getItems().get(0).getId();

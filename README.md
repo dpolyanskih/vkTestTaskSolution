@@ -2,6 +2,10 @@
 My humble solution of the test assignment from VK
 
 ## Usage
+
+Fill config.properties with username, password, client_id and client_secret
+
+then run Gradle task
 ```sh
 gradle clean build test
 ```
